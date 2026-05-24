@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,10 +39,12 @@ export default function Navbar() {
             scrolled ? "bg-background/90 backdrop-blur-xl border border-border shadow-lg" : "bg-transparent"
           }`}>
             {/* Logo Desktop/Tablet */}
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo("hero")}>
-              <Sun className={`w-7 h-7 md:w-8 md:h-8 transition-colors duration-500 ${scrolled ? 'text-primary' : 'text-primary drop-shadow-md'}`} />
+            <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("hero")}>
+              <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border border-primary/20 bg-white flex shrink-0 shadow-sm">
+                <Image src="/logo.png" alt="Radhey Solar Logo" fill className="object-cover p-1 hover:scale-110 transition-transform duration-500" />
+              </div>
               <span className={`font-heading font-black text-xl md:text-2xl tracking-tighter transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white drop-shadow-md'}`}>
-                SOLAR<span className="text-primary">TECH</span>
+                RADHEY <span className="text-primary">SOLAR</span>
               </span>
             </div>
 
@@ -84,10 +87,12 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between mb-8">
               {/* Logo Mobile */}
-              <div className="flex items-center gap-2">
-                <Sun className="w-8 h-8 text-primary" />
+              <div className="flex items-center gap-3">
+                <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 bg-white shadow-sm shrink-0">
+                  <Image src="/logo.png" alt="Radhey Solar Logo" fill className="object-cover p-1" />
+                </div>
                 <span className="font-heading font-black text-2xl tracking-tighter text-foreground">
-                  SOLAR<span className="text-primary">TECH</span>
+                  RADHEY <span className="text-primary">SOLAR</span>
                 </span>
               </div>
               <button 
