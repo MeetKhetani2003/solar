@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -106,7 +107,7 @@ export default function ContactPage() {
             </p>
             <nav aria-label="Breadcrumb" className="mt-8">
               <ol className="flex items-center gap-2 font-sans text-sm text-background/40">
-                <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
+                <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
                 <li aria-hidden="true" className="text-background/20">/</li>
                 <li aria-current="page" className="text-primary font-semibold">Contact</li>
               </ol>

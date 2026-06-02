@@ -7,7 +7,7 @@ import {
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/schemas";
+import { SITE_URL, SITE_NAME } from "@/lib/schemas";
 
 // ─── Font Loading (display: swap prevents FOIT for CLS improvement) ──────────
 const bricolage = Bricolage_Grotesque({

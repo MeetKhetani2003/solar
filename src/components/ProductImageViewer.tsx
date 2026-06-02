@@ -26,7 +26,6 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
   
   // Lightbox Zoom and Pan State
   const [lightboxScale, setLightboxScale] = useState(1);
-  const [lightboxOffset, setLightboxOffset] = useState({ x: 0, y: 0 });
   const lightboxImageRef = useRef<HTMLDivElement>(null);
 
   const totalImages = images?.length || 0;
@@ -75,16 +74,12 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
   const handleZoomOut = () => {
     setLightboxScale((prev) => {
       const nextScale = Math.max(prev - 0.5, 1);
-      if (nextScale === 1) {
-        setLightboxOffset({ x: 0, y: 0 });
-      }
       return nextScale;
     });
   };
 
   const resetLightboxZoom = () => {
     setLightboxScale(1);
-    setLightboxOffset({ x: 0, y: 0 });
   };
 
   const openLightbox = () => {

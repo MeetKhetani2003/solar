@@ -8,11 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, ChevronDown, ArrowUpRight } from "lucide-react";
 import { productsData } from "@/lib/products";
 
-const mainLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
