@@ -7,25 +7,20 @@ import { ArrowRight, Play, Pause } from "lucide-react";
 const slides = [
   {
     id: "01",
-    category: "Thermal Solutions",
-    headline: "Precision Drying Technologies.",
-    subheadline: "Advanced solar-powered thermal systems engineered for maximum industrial throughput.",
-    video: "/solardryer.mp4"
+    category: "Concentrator Systems",
+    headline: "Solar Parabolic Disc.",
+    subheadline: "Dual-axis tracking concentrators designed for extreme temperatures up to 400°C.",
+    video: "/Parabolic Disc/Herovid.webm",
+    videoType: "video/webm"
   },
   {
     id: "02",
-    category: "Agricultural Scale",
-    headline: "Built For The Harvest.",
-    subheadline: "Robust processing systems delivering unmatched performance and reliability at scale.",
-    video: "/solar2.mp4"
-  },
-  {
-    id: "03",
-    category: "Global Innovation",
-    headline: "25 Years Of Excellence.",
-    subheadline: "Manufacturing world-class sustainable technology for modern industries worldwide.",
-    video: "/solar3.mp4"
-  },
+    category: "Process Heat",
+    headline: "Parabolic Trough.",
+    subheadline: "Single-axis automated tracking systems engineered for high-pressure industrial steam.",
+    video: "/ParabolicThough/Hero.webm",
+    videoType: "video/webm"
+  }
 ];
 
 const SLIDE_DURATION = 6000;
@@ -73,7 +68,7 @@ export default function Hero() {
   };
 
   return (
-    <section ref={heroRef} id="hero" aria-label="Radhey Solar — Industrial Solar Drying Solutions showcase" className="relative w-full h-screen bg-foreground flex flex-col justify-end overflow-hidden">
+    <section ref={heroRef} id="hero" aria-label="Radha Solar — Industrial Solar Drying Solutions showcase" className="relative w-full h-screen bg-foreground flex flex-col justify-end overflow-hidden">
       
       {/* Edge-to-Edge Video Background with Parallax */}
       <motion.div 
@@ -93,7 +88,7 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src={slides[currentSlide].video} type="video/mp4" />
+            <source src={slides[currentSlide].video} type={slides[currentSlide].videoType || "video/mp4"} />
           </motion.video>
         </AnimatePresence>
       </motion.div>
@@ -108,7 +103,7 @@ export default function Hero() {
         <div className="w-full max-w-5xl pointer-events-auto">
           {/* Visually-hidden static h1 for SSR/SEO — visible h1 is animated below */}
           <span className="sr-only">
-            Radhey Solar — Precision Industrial Solar Drying &amp; Thermal Solutions. 25+ Years of Excellence, 1000+ Installations Worldwide.
+            Radha Solar — Precision Industrial Solar Drying &amp; Thermal Solutions. 25+ Years of Excellence, 1000+ Installations Worldwide.
           </span>
           <AnimatePresence mode="wait">
             <motion.div

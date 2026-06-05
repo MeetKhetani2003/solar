@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Radhey Solar manufactures advanced industrial solar dryers, parabolic thermal concentrators & biomass processors for agriculture, food processing, pharmaceuticals & heavy industry. 25+ years, 1000+ installations, 20+ countries.",
+    "Radha Solar manufactures advanced industrial solar dryers, parabolic thermal concentrators & biomass processors for agriculture, food processing, pharmaceuticals & heavy industry. 25+ years, 1000+ installations, 20+ countries.",
   keywords: [
     "industrial solar dryer",
     "solar drying system",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     "industrial drying plant",
     "renewable energy manufacturing",
     "solar thermal energy",
-    "Radhey Solar",
+    "Radha Solar",
     "solar dryer India",
     "solar dryer Gujarat",
   ],
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/hero_solar_dryer_1779596596223.png`,
         width: 1200,
         height: 630,
-        alt: "Radhey Solar — Industrial Solar Drying & Thermal Solutions Manufacturer",
+        alt: "Radha Solar — Industrial Solar Drying & Thermal Solutions Manufacturer",
         type: "image/png",
       },
     ],
@@ -126,15 +126,15 @@ export const metadata: Metadata = {
   // ── Twitter / X Cards ────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    site: "@radheysolar",
-    creator: "@radheysolar",
+    site: "@radhasolar",
+    creator: "@radhasolar",
     title: `${SITE_NAME} | Industrial Solar Drying & Thermal Solutions`,
     description:
       "Advanced industrial solar dryers & thermal solutions. 25+ years, 1000+ installations, 20+ countries. Agriculture, food processing, pharmaceuticals & heavy industry.",
     images: [
       {
         url: `${SITE_URL}/hero_solar_dryer_1779596596223.png`,
-        alt: "Radhey Solar Industrial Solar Dryer",
+        alt: "Radha Solar Industrial Solar Dryer",
       },
     ],
   },

@@ -69,13 +69,23 @@ export default function Navbar() {
             }`}
           >
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-full" aria-label="Radhey Solar — homepage">
-              <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border border-primary/20 bg-white flex shrink-0 shadow-sm">
-                <Image src="/logo.png" alt="Radhey Solar — Industrial Solar Drying Solutions" fill className="object-cover p-1 hover:scale-110 transition-transform duration-500" />
+            <Link href="/" className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-full" aria-label="Radha Solar Energy Cell — homepage">
+              <div className="flex flex-col items-center shrink-0">
+                <div className="relative w-10 h-10 md:w-11 md:h-11 overflow-hidden rounded-full border border-primary/20 bg-white flex shrink-0 shadow-sm">
+                  <Image src="/logo.png" alt="Radha Solar Energy Cell — Industrial Solar Drying Solutions" fill className="object-cover p-1 hover:scale-110 transition-transform duration-500" />
+                </div>
+                <span className={`text-[8px] font-mono font-bold tracking-tighter mt-0.5 uppercase transition-colors duration-500 ${isTransparent ? "text-white/80" : "text-muted-foreground"}`}>
+                  Since 1997
+                </span>
               </div>
-              <span className={`font-heading font-black text-xl md:text-2xl tracking-tighter transition-colors duration-500 ${isTransparent ? "text-white drop-shadow-md" : "text-foreground"}`}>
-                RADHEY <span className="text-primary">SOLAR</span>
-              </span>
+              <div className="flex flex-col justify-center">
+                <span className={`font-heading font-black text-xl md:text-2xl leading-none tracking-tighter transition-colors duration-500 ${isTransparent ? "text-white drop-shadow-md" : "text-foreground"}`}>
+                  RADHA <span className="text-primary">SOLAR</span>
+                </span>
+                <span className="text-[9px] md:text-[10px] font-sans font-extrabold tracking-[0.25em] text-primary leading-none mt-1.5 uppercase">
+                  ENERGY CELL
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Links */}
@@ -106,6 +116,9 @@ export default function Navbar() {
                   <span className={`absolute -bottom-1 left-0 h-px bg-primary transition-all duration-300 ${isProductsActive ? "w-full" : "w-0 group-hover:w-full"}`} />
                 </button>
               </div>
+
+              {/* Quality */}
+              <NavLink href="/quality" label="Quality" isTransparent={isTransparent} isActive={pathname.startsWith("/quality")} />
 
               {/* Contact */}
               <NavLink href="/contact" label="Contact" isTransparent={isTransparent} isActive={pathname === "/contact"} />
@@ -229,12 +242,22 @@ export default function Navbar() {
             {/* Mobile header */}
             <div className="flex items-center justify-between mb-10">
               <Link href="/" className="flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
-                <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 bg-white shadow-sm shrink-0">
-                  <Image src="/logo.png" alt="Radhey Solar" fill className="object-cover p-1" />
+                <div className="flex flex-col items-center shrink-0">
+                  <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 bg-white shadow-sm shrink-0">
+                    <Image src="/logo.png" alt="Radha Solar Energy Cell" fill className="object-cover p-1" />
+                  </div>
+                  <span className="text-[8px] font-mono font-bold tracking-tighter mt-0.5 text-muted-foreground uppercase">
+                    Since 1997
+                  </span>
                 </div>
-                <span className="font-heading font-black text-2xl tracking-tighter text-foreground">
-                  RADHEY <span className="text-primary">SOLAR</span>
-                </span>
+                <div className="flex flex-col">
+                  <span className="font-heading font-black text-2xl leading-none tracking-tighter text-foreground">
+                    RADHA <span className="text-primary">SOLAR</span>
+                  </span>
+                  <span className="text-[10px] font-sans font-extrabold tracking-[0.25em] text-primary leading-none mt-1.5 uppercase">
+                    ENERGY CELL
+                  </span>
+                </div>
               </Link>
               <button onClick={() => setMobileMenuOpen(false)} className="p-2 text-foreground hover:bg-foreground/5 rounded-full" aria-label="Close navigation menu">
                 <X className="w-7 h-7" aria-hidden="true" />
@@ -246,6 +269,7 @@ export default function Navbar() {
               {[
                 { label: "Home", href: "/" },
                 { label: "About", href: "/about" },
+                { label: "Quality", href: "/quality" },
               ].map(({ label, href }, idx) => (
                 <motion.div key={label} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: idx * 0.06 }}>
                   <Link href={href} onClick={() => setMobileMenuOpen(false)} className={`block py-4 text-3xl sm:text-4xl font-heading font-bold border-b border-border/20 ${pathname === href ? "text-primary" : "text-foreground hover:text-primary"} transition-colors`}>

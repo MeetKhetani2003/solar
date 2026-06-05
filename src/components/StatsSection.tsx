@@ -14,7 +14,7 @@ export default function StatsSection() {
   return (
     <section
       className="relative w-full py-24 md:py-32 bg-background text-foreground z-20 overflow-hidden border-b border-border/40"
-      aria-label="Radhey Solar company statistics: 25 years experience, 1000+ installations, 50+ products, 20+ countries"
+      aria-label="Radha Solar company statistics: 25 years experience, 1000+ installations, 50+ products, 20+ countries"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(234,88,12,0.03)_0%,transparent_70%)] pointer-events-none" />
       <div className="container mx-auto px-4 md:px-6 max-w-[1600px] relative z-10">

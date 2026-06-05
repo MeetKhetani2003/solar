@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/schemas";
 
 /**
- * Dynamic sitemap for Radhey Solar.
+ * Dynamic sitemap for Radha Solar.
  * Next.js automatically serves this at /sitemap.xml
  */
 export default function sitemap(): MetadataRoute.Sitemap {

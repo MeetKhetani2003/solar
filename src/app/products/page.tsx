@@ -6,12 +6,12 @@ import Navbar from "@/components/Navbar";
 import LenisProvider from "@/components/LenisProvider";
 
 export const metadata: Metadata = {
-  title: "Solar Products | Radhey Solar — Dryers, Concentrators & Biomass Equipment",
+  title: "Solar Products | Radha Solar — Dryers, Concentrators & Biomass Equipment",
   description:
-    "Browse Radhey Solar's full product range: Standard Solar Dryers, Vegetable & Fruit Dehydrators, Herb Dryers, Sludge Processors, Parabolic Thermal Concentrators, Industrial Drying Plants & Biomass Processors.",
+    "Browse Radha Solar's full product range: Standard Solar Dryers, Vegetable & Fruit Dehydrators, Herb Dryers, Sludge Processors, Parabolic Thermal Concentrators, Industrial Drying Plants & Biomass Processors.",
   alternates: { canonical: "/products" },
   openGraph: {
-    title: "Solar Products | Radhey Solar",
+    title: "Solar Products | Radha Solar",
     description:
       "8 industrial solar products — dryers, concentrators, biomass processors. Capacities from 20 kg/batch to 50 tons/batch. GMP certified, ISO 9001:2008. Request a quote today.",
     url: "/products",

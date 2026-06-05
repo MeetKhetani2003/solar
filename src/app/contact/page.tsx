@@ -24,8 +24,8 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@radheysolar.com",
-    href: "mailto:info@radheysolar.com",
+    value: "info@radhasolar.com",
+    href: "mailto:info@radhasolar.com",
   },
   {
     icon: Clock,
@@ -189,7 +189,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-5 rounded-2xl border border-[#25D366]/30 bg-[#25D366]/5 hover:bg-[#25D366]/10 hover:border-[#25D366]/50 transition-all duration-300 focus:outline-none"
-                  aria-label="Chat with Radhey Solar on WhatsApp"
+                  aria-label="Chat with Radha Solar on WhatsApp"
                 >
                   <div className="w-11 h-11 rounded-xl bg-[#25D366] flex items-center justify-center shrink-0 shadow-lg shadow-[#25D366]/20">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-6 h-6" aria-hidden="true">

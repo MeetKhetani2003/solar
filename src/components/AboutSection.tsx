@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 /**
- * AboutSection — Full Company Profile for Radha Energy Cell
+ * AboutSection — Full Company Profile for Radha Solar Energy Cell
  * Placed directly after Hero. Uses existing site design tokens.
  * No visual redesign — matches the established aesthetic exactly.
  */
@@ -98,7 +98,7 @@ export default function AboutSection() {
     <section
       ref={sectionRef}
       id="about"
-      aria-label="About Radha Energy Cell — Solar Products Manufacturer in Ludhiana Punjab India"
+      aria-label="About Radha Solar Energy Cell — Solar Products Manufacturer in Ludhiana Punjab India"
       className="relative w-full bg-background text-foreground overflow-hidden border-b border-border/40"
     >
       {/* ────────────────────────────────────────────────────── */}
@@ -143,7 +143,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                 className="font-sans text-lg md:text-xl text-muted-foreground leading-relaxed mb-5"
               >
-                Radha Energy Cell is a{" "}
+                Radha Solar Energy Cell is a{" "}
                 <strong className="text-foreground font-semibold">market leader</strong>{" "}
                 in Solar Products and Equipment — a reputed manufacturer and exporter of{" "}
                 <span className="text-foreground font-medium">Solar Parabolic Cookers, Solar Cookers, Solar Dishes,</span>{" "}
@@ -185,18 +185,18 @@ export default function AboutSection() {
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
                   className="px-8 py-3 bg-primary text-primary-foreground font-sans font-bold text-sm rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-md shadow-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  aria-label="Explore Radha Energy Cell solar products"
+                  aria-label="Explore Radha Solar Energy Cell solar products"
                 >
                   Explore Products
                 </button>
                 <a
                   href={`https://wa.me/911234567890?text=${encodeURIComponent(
-                    "Hello! I'd like to know more about Radha Energy Cell solar products."
+                    "Hello! I'd like to know more about Radha Solar Energy Cell solar products."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 border border-border/60 text-foreground font-sans font-bold text-sm rounded-full hover:border-primary hover:text-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  aria-label="Contact Radha Energy Cell on WhatsApp"
+                  aria-label="Contact Radha Solar Energy Cell on WhatsApp"
                 >
                   Contact Us
                 </a>
@@ -307,7 +307,7 @@ export default function AboutSection() {
                 className="font-sans text-base text-background/65 leading-relaxed mb-4"
               >
                 Want to install a Solar Fruit Dryer or Solar Vegetable Dehydrator in India? We supply all types of solar dryers in bulk order quantities.{" "}
-                <strong className="text-background">RADHA ENERGY CELL</strong>{" "}
+                <strong className="text-background">RADHA SOLAR ENERGY CELL</strong>{" "}
                 — the Solar Dryer manufacturer, supplier and exporter in India. Dry Amla, Chillies, Mushroom, Grapes, Dates, Vegetables, Mangoes and many other agro-products using{" "}
                 <span className="text-primary font-semibold">free solar energy</span>.
               </motion.p>
@@ -404,6 +404,124 @@ export default function AboutSection() {
                 </div>
               </motion.div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── PART 3 — Infrastructure, Facilities & R&D ────────── */}
+      <div className="py-24 md:py-32 relative bg-background border-t border-border/40">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(234,88,12,0.05)_0%,transparent_60%)] pointer-events-none" />
+        <div className="container mx-auto px-4 md:px-6 max-w-[1600px] relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+            
+            {/* Infrastructure & Facilities */}
+            <div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="font-mono text-primary text-sm font-bold tracking-[0.3em] uppercase mb-5"
+              >
+                Our Facility
+              </motion.p>
+              <motion.h3
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                className="font-heading text-4xl md:text-5xl font-bold text-foreground tracking-tight leading-tight mb-6"
+              >
+                Infrastructure &amp; Facilities
+              </motion.h3>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="font-sans text-base text-muted-foreground leading-relaxed mb-6"
+              >
+                We have maintained an ultra-modern infrastructure unit that is well-equipped with the latest machinery and technology. This robust layout assists us in meeting large and urgent orders for our clients within the predefined time schedules.
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+                className="font-sans text-base text-muted-foreground leading-relaxed mb-6"
+              >
+                For smooth functioning, we have separated our infrastructure into distinct specialized departments including production, quality testing, R&D, and sales &amp; marketing. We upgrade all installed machinery and equipment on a regular basis in accordance with market advancements.
+              </motion.p>
+              
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                {[
+                  "Advanced Machinery",
+                  "Separate Departments",
+                  "Regular Upgrades",
+                  "Urgent Order Handling"
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2.5">
+                    <CheckCircle className="w-4.5 h-4.5 text-primary shrink-0" aria-hidden="true" />
+                    <span className="font-sans text-sm text-foreground/80 font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* R&D Department */}
+            <div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="font-mono text-primary text-sm font-bold tracking-[0.3em] uppercase mb-5"
+              >
+                Innovation
+              </motion.p>
+              <motion.h3
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                className="font-heading text-4xl md:text-5xl font-bold text-foreground tracking-tight leading-tight mb-6"
+              >
+                Research &amp; Development
+              </motion.h3>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="font-sans text-base text-muted-foreground leading-relaxed mb-6"
+              >
+                In order to compete with the rapid pace of solar technology developments, we have established an in-house R&D wing. This division is headed by qualified Researchers and experienced analysts.
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+                className="font-sans text-base text-muted-foreground leading-relaxed mb-6"
+              >
+                Our R&D experts conduct surveys and studies regarding consumer demands and incoming technological additions. They maintain track records of advancements, assist the organization with innovation adoption, and align the production team with the latest market refinements.
+              </motion.p>
+
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                {[
+                  "Experienced Analysts",
+                  "Market Trend Surveys",
+                  "Innovation Briefings",
+                  "Technical Guidance"
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2.5">
+                    <CheckCircle className="w-4.5 h-4.5 text-primary shrink-0" aria-hidden="true" />
+                    <span className="font-sans text-sm text-foreground/80 font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -8,12 +8,12 @@ import Navbar from "@/components/Navbar";
 import LenisProvider from "@/components/LenisProvider";
 
 export const metadata: Metadata = {
-  title: "About Us | Radhey Solar — Solar Products Manufacturer Since 2007",
+  title: "About Us | Radha Solar — Solar Products Manufacturer Since 2007",
   description:
-    "Learn about Radha Energy Cell — ISO 9001:2008 certified, MSME approved solar products manufacturer in Ludhiana Punjab. Established 2007. Solar PV Grid & Off-Grid specialists with 700+ rooftop installations.",
+    "Learn about Radha Solar Energy Cell — ISO 9001:2008 certified, MSME approved solar products manufacturer in Ludhiana Punjab. Established 2007. Solar PV Grid & Off-Grid specialists with 700+ rooftop installations.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About Radha Energy Cell | Solar Products Manufacturer Ludhiana India",
+    title: "About Radha Solar Energy Cell | Solar Products Manufacturer Ludhiana India",
     description:
       "Established 2007 in Ludhiana Punjab. ISO 9001:2008 & MSME certified. Solar dryers, parabolic cookers, PV grid systems. 700+ rooftop installations, 4300+ street lights, 5.25 MW grid project.",
     url: "/about",

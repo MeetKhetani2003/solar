@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/schemas";
 
 /**
- * Dynamic robots.txt for Radhey Solar.
+ * Dynamic robots.txt for Radha Solar.
  * Next.js automatically serves this at /robots.txt
  */
 export default function robots(): MetadataRoute.Robots {

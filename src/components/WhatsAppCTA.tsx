@@ -31,7 +31,7 @@ export default function WhatsAppCTA() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Contact Radhey Solar on WhatsApp for industrial solar dryer inquiries"
+      aria-label="Contact Radha Solar on WhatsApp for industrial solar dryer inquiries"
       title="Chat with us on WhatsApp"
       className="fixed bottom-6 right-6 z-[500] flex items-center justify-center w-14 h-14 rounded-full shadow-2xl transition-all duration-500 focus:outline-none focus:ring-4 focus:ring-green-400/50"
       style={{

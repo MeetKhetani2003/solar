@@ -1,6 +1,6 @@
 // ─── Site-wide constants ────────────────────────────────────────────────────
-export const SITE_URL = "https://radheysolar.com";
-export const SITE_NAME = "Radhey Solar";
+export const SITE_URL = "https://radhasolar.com";
+export const SITE_NAME = "Radha Solar";
 export const SITE_DESCRIPTION =
   "Advanced Solar Drying & Thermal Solutions Designed For Agriculture, Food Processing, Industrial Manufacturing, and Sustainable Production. 25+ Years of Excellence, 1000+ Installations, 20+ Countries Served.";
 
@@ -43,10 +43,10 @@ export const organizationSchema = {
     },
   ],
   sameAs: [
-    "https://www.facebook.com/radheysolar",
-    "https://www.linkedin.com/company/radheysolar",
-    "https://www.instagram.com/radheysolar",
-    "https://www.youtube.com/@radheysolar",
+    "https://www.facebook.com/radhasolar",
+    "https://www.linkedin.com/company/radhasolar",
+    "https://www.instagram.com/radhasolar",
+    "https://www.youtube.com/@radhasolar",
   ],
 };
 
@@ -63,7 +63,7 @@ export const localBusinessSchema = {
     "Leading manufacturer of industrial solar dryers, parabolic thermal concentrators, and biomass processing equipment. Serving agriculture, food processing, pharmaceuticals, and heavy industry worldwide.",
   priceRange: "₹₹₹",
   telephone: "+91-1234567890",
-  email: "info@radheysolar.com",
+  email: "info@radhasolar.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Industrial Area, Phase 2",
@@ -487,15 +487,15 @@ export const faqSchema = {
       name: "What is an industrial solar dryer and how does it work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "An industrial solar dryer is a system that uses solar thermal energy to remove moisture from agricultural produce, food products, herbs, or industrial materials. It works by capturing solar radiation through collectors, heating air, and circulating it through a drying chamber to evaporate moisture from the material. Radhey Solar dryers achieve temperatures between 35°C and 85°C and can operate 24/7 with hybrid backup systems.",
+        text: "An industrial solar dryer is a system that uses solar thermal energy to remove moisture from agricultural produce, food products, herbs, or industrial materials. It works by capturing solar radiation through collectors, heating air, and circulating it through a drying chamber to evaporate moisture from the material. Radha Solar dryers achieve temperatures between 35°C and 85°C and can operate 24/7 with hybrid backup systems.",
       },
     },
     {
       "@type": "Question",
-      name: "What is the capacity of Radhey Solar dryers?",
+      name: "What is the capacity of Radha Solar dryers?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Radhey Solar offers dryers ranging from small-scale units processing 20 kg per batch (herb dryers) up to massive industrial drying plants handling 10-50 tons per batch. Our vegetable processing units handle 100-1000 kg per batch, while our sludge processors can handle 1-10 tons per day continuously.",
+        text: "Radha Solar offers dryers ranging from small-scale units processing 20 kg per batch (herb dryers) up to massive industrial drying plants handling 10-50 tons per batch. Our vegetable processing units handle 100-1000 kg per batch, while our sludge processors can handle 1-10 tons per day continuously.",
       },
     },
     {
@@ -503,20 +503,20 @@ export const faqSchema = {
       name: "How much does an industrial solar dryer cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The cost of an industrial solar dryer varies based on capacity, material type, and automation level. Radhey Solar offers solutions starting from small agricultural units to enterprise-scale facilities. Contact us for a customized quote tailored to your production requirements, location, and budget.",
+        text: "The cost of an industrial solar dryer varies based on capacity, material type, and automation level. Radha Solar offers solutions starting from small agricultural units to enterprise-scale facilities. Contact us for a customized quote tailored to your production requirements, location, and budget.",
       },
     },
     {
       "@type": "Question",
-      name: "What is the thermal efficiency of Radhey Solar drying systems?",
+      name: "What is the thermal efficiency of Radha Solar drying systems?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Radhey Solar drying systems achieve thermal efficiency of over 85% in our food processing models. Our parabolic concentrators deliver focal temperatures up to 400°C with 94% mirror reflectivity. Industrial plants include heat recovery systems that save up to 40% in additional energy.",
+        text: "Radha Solar drying systems achieve thermal efficiency of over 85% in our food processing models. Our parabolic concentrators deliver focal temperatures up to 400°C with 94% mirror reflectivity. Industrial plants include heat recovery systems that save up to 40% in additional energy.",
       },
     },
     {
       "@type": "Question",
-      name: "Are Radhey Solar dryers suitable for pharmaceutical and GMP applications?",
+      name: "Are Radha Solar dryers suitable for pharmaceutical and GMP applications?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes. Our Botanical & Herb Dryer is specifically designed for pharmaceutical-grade drying applications. It features HEPA H13 air filtration, precision RH & temperature sensors, ultra-low temperature capabilities (25°C - 50°C) to preserve volatile oils and active ingredients, and is GMP / ISO 9001 compliant.",
@@ -527,23 +527,23 @@ export const faqSchema = {
       name: "Do the solar dryers work on cloudy days or at night?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. All Radhey Solar industrial dryers include hybrid backup heating systems — either electric or biomass-based — to ensure continuous 24/7 operation regardless of weather conditions. The hybrid system automatically activates when solar input is insufficient, guaranteeing uninterrupted production.",
+        text: "Yes. All Radha Solar industrial dryers include hybrid backup heating systems — either electric or biomass-based — to ensure continuous 24/7 operation regardless of weather conditions. The hybrid system automatically activates when solar input is insufficient, guaranteeing uninterrupted production.",
       },
     },
     {
       "@type": "Question",
-      name: "How many countries has Radhey Solar served?",
+      name: "How many countries has Radha Solar served?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Radhey Solar has served customers in 20+ countries across Asia, Africa, the Middle East, and Europe. With 25+ years of experience and 1000+ successful installations, we are a globally recognized leader in industrial solar thermal technology.",
+        text: "Radha Solar has served customers in 20+ countries across Asia, Africa, the Middle East, and Europe. With 25+ years of experience and 1000+ successful installations, we are a globally recognized leader in industrial solar thermal technology.",
       },
     },
     {
       "@type": "Question",
-      name: "What warranty does Radhey Solar offer on its products?",
+      name: "What warranty does Radha Solar offer on its products?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Radhey Solar offers a 5-year warranty on our Standard Solar Dryer. Parabolic thermal concentrators are built to last 25+ years. All products are manufactured with food-grade stainless steel (SS304/SS316) or epoxy-coated steel for corrosion resistance and long-term durability.",
+        text: "Radha Solar offers a 5-year warranty on our Standard Solar Dryer. Parabolic thermal concentrators are built to last 25+ years. All products are manufactured with food-grade stainless steel (SS304/SS316) or epoxy-coated steel for corrosion resistance and long-term durability.",
       },
     },
     {
@@ -556,7 +556,7 @@ export const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What is the installation timeline for a Radhey Solar system?",
+      name: "What is the installation timeline for a Radha Solar system?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Installation timelines vary by system size. Standard solar dryers and specialized units can typically be commissioned within weeks. Massive scale industrial drying plants require 3-6 months for full deployment, including site preparation, modular installation, and commissioning. Our team handles end-to-end project management.",
@@ -571,7 +571,7 @@ export const reviewSchema = {
   "@type": "Review",
   itemReviewed: {
     "@type": "Product",
-    name: "Radhey Solar Industrial Solar Dryer",
+    name: "Radha Solar Industrial Solar Dryer",
     brand: { "@type": "Brand", name: SITE_NAME },
   },
   reviewRating: {
@@ -585,7 +585,7 @@ export const reviewSchema = {
     name: "Rajesh Patel",
   },
   reviewBody:
-    "We installed Radhey Solar's vegetable processing unit 2 years ago and it has been exceptional. The automated temperature control ensures consistent drying, and the hybrid backup means we never lose a batch. Post-harvest losses dropped by 70% and energy costs fell significantly. Highly recommend for any serious agricultural processor.",
+    "We installed Radha Solar's vegetable processing unit 2 years ago and it has been exceptional. The automated temperature control ensures consistent drying, and the hybrid backup means we never lose a batch. Post-harvest losses dropped by 70% and energy costs fell significantly. Highly recommend for any serious agricultural processor.",
   datePublished: "2024-08-15",
   publisher: { "@id": `${SITE_URL}/#organization` },
 };

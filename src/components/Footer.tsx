@@ -1,14 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   MapPin,
   Phone,
   Mail,
   ArrowUpRight,
-  ArrowRight,
   Sun,
 } from "lucide-react";
 
@@ -52,38 +51,27 @@ function FacebookIcon({ className }: { className?: string }) {
 
 const footerLinks = {
   Products: [
-    { label: "Standard Solar Dryer", href: "#products" },
-    { label: "Vegetable Processing Unit", href: "#products" },
-    { label: "Fruit Dehydration System", href: "#products" },
-    { label: "Botanical & Herb Dryer", href: "#products" },
-    { label: "Industrial Sludge Processor", href: "#products" },
-    { label: "Parabolic Thermal Concentrator", href: "#products" },
-    { label: "Massive Scale Drying Plant", href: "#products" },
-    { label: "Biomass Processor", href: "#products" },
+    { label: "Solar Parabolic Disc", href: "/products/parabolic-disc" },
+    { label: "Power Trough REC-20", href: "/products/parabolic-trough" },
   ],
   Company: [
-    { label: "About Us", href: "#about" },
-    { label: "Why Choose Us", href: "#why-choose-us" },
-    { label: "Product Ecosystem", href: "#products" },
-    { label: "Quality Standards", href: "#about" },
-    { label: "ISO Certification", href: "#about" },
-    { label: "MSME Approval", href: "#about" },
+    { label: "About Us", href: "/about" },
+    { label: "Quality Assurance", href: "/quality" },
+    { label: "ISO Certification", href: "/quality#iso" },
   ],
-  Services: [
-    { label: "Solar PV Grid Systems", href: "#products" },
-    { label: "Off-Grid Solar", href: "#products" },
-    { label: "Rooftop Installations", href: "#products" },
-    { label: "Street Light Projects", href: "#products" },
-    { label: "Industrial Drying Plants", href: "#products" },
-    { label: "Project Commissioning", href: "#products" },
+  Capabilities: [
+    { label: "Solar Steam Generation", href: "/products/parabolic-trough" },
+    { label: "High Temp Process Heat", href: "/products/parabolic-disc" },
+    { label: "Rooftop Installations", href: "/about" },
+    { label: "Request Quote", href: "/contact" },
   ],
 };
 
 const socialLinks = [
-  { icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/radheysolar" },
-  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/company/radheysolar" },
-  { icon: YoutubeIcon, label: "YouTube", href: "https://www.youtube.com/@radheysolar" },
-  { icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/radheysolar" },
+  { icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/radhasolar" },
+  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/company/radhasolar" },
+  { icon: YoutubeIcon, label: "YouTube", href: "https://www.youtube.com/@radhasolar" },
+  { icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/radhasolar" },
 ];
 
 const certifications = [
@@ -94,93 +82,16 @@ const certifications = [
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleScroll = (id: string) => {
-    document.getElementById(id.replace("#", ""))?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      setEmail("");
-    }
-  };
-
   return (
     <footer
       id="footer"
       className="relative bg-foreground text-background overflow-hidden"
-      aria-label="Radha Energy Cell footer"
+      aria-label="Radha Solar Energy Cell footer"
     >
       {/* Top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
       <div className="absolute top-0 right-0 w-[50vw] h-[40vh] bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[40vw] h-[30vh] bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
-
-      {/* ── Newsletter Band ─────────────────────────────────── */}
-      <div className="border-b border-background/10">
-        <div className="container mx-auto px-4 md:px-6 max-w-[1600px] py-16">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
-            <div className="max-w-xl">
-              <motion.p
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-3"
-              >
-                Stay Updated
-              </motion.p>
-              <motion.h3
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.06 }}
-                className="font-heading text-3xl md:text-4xl font-bold text-background tracking-tight leading-tight"
-              >
-                Get solar insights & product updates from{" "}
-                <span className="text-primary">Radha Energy Cell</span>
-              </motion.h3>
-            </div>
-
-            <motion.form
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto lg:min-w-[420px]"
-            >
-              {submitted ? (
-                <div className="flex items-center gap-3 px-6 py-4 rounded-full bg-primary/20 border border-primary/30 text-primary font-sans font-semibold text-sm">
-                  <span>✓</span> Thank you! We&apos;ll be in touch soon.
-                </div>
-              ) : (
-                <>
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email address"
-                    required
-                    aria-label="Email address for newsletter subscription"
-                    className="flex-1 px-5 py-3.5 rounded-full bg-background/8 border border-background/15 text-background placeholder:text-background/35 font-sans text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-colors"
-                  />
-                  <button
-                    type="submit"
-                    className="px-7 py-3.5 bg-primary text-white font-sans font-bold text-sm rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-lg shadow-primary/30 flex items-center gap-2 shrink-0 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                    aria-label="Subscribe to Radha Energy Cell newsletter"
-                  >
-                    Subscribe <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                  </button>
-                </>
-              )}
-            </motion.form>
-          </div>
-        </div>
-      </div>
 
       {/* ── Main Footer Grid ─────────────────────────────────── */}
       <div className="container mx-auto px-4 md:px-6 max-w-[1600px] py-20">
@@ -190,17 +101,27 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col gap-7">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="relative w-11 h-11 overflow-hidden rounded-full border border-primary/20 bg-white flex shrink-0 shadow-md">
-                <Image
-                  src="/logo.png"
-                  alt="Radha Energy Cell — Solar Products Manufacturer Ludhiana Punjab India"
-                  fill
-                  className="object-cover p-1"
-                />
+              <div className="flex flex-col items-center shrink-0">
+                <div className="relative w-11 h-11 overflow-hidden rounded-full border border-primary/20 bg-white flex shrink-0 shadow-md">
+                  <Image
+                    src="/logo.png"
+                    alt="Radha Solar Energy Cell — Solar Products Manufacturer Ludhiana Punjab India"
+                    fill
+                    className="object-cover p-1"
+                  />
+                </div>
+                <span className="text-[8px] font-mono font-bold tracking-tighter mt-0.5 text-background/50 uppercase">
+                  Since 1997
+                </span>
               </div>
-              <span className="font-heading font-black text-2xl tracking-tighter text-background">
-                RADHEY <span className="text-primary">SOLAR</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="font-heading font-black text-2xl leading-none tracking-tighter text-background">
+                  RADHA <span className="text-primary">SOLAR</span>
+                </span>
+                <span className="text-[10px] font-sans font-extrabold tracking-[0.25em] text-primary leading-none mt-1.5 uppercase">
+                  ENERGY CELL
+                </span>
+              </div>
             </div>
 
             {/* Tagline */}
@@ -226,7 +147,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Radha Energy Cell on ${label}`}
+                  aria-label={`Radha Solar Energy Cell on ${label}`}
                   className="w-9 h-9 rounded-full border border-background/15 flex items-center justify-center text-background/50 hover:border-primary hover:text-primary hover:bg-primary/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
                 >
                   <Icon className="w-4 h-4" aria-hidden="true" />
@@ -245,8 +166,8 @@ export default function Footer() {
                 <ul className="flex flex-col gap-3" role="list">
                   {links.map(({ label, href }) => (
                     <li key={label}>
-                      <button
-                        onClick={() => handleScroll(href)}
+                      <Link
+                        href={href}
                         className="font-sans text-sm text-background/55 hover:text-primary transition-colors duration-300 text-left flex items-center gap-1.5 group focus:outline-none focus-visible:underline"
                         aria-label={`Navigate to ${label}`}
                       >
@@ -257,7 +178,7 @@ export default function Footer() {
                           className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 shrink-0"
                           aria-hidden="true"
                         />
-                      </button>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -276,7 +197,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-start gap-4 group focus:outline-none"
-              aria-label="Radha Energy Cell location in Ludhiana Punjab India"
+              aria-label="Radha Solar Energy Cell location in Ludhiana Punjab India"
             >
               <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center shrink-0 group-hover:bg-primary/25 transition-colors duration-300">
                 <MapPin className="w-5 h-5 text-primary" aria-hidden="true" />
@@ -292,7 +213,7 @@ export default function Footer() {
             <a
               href="tel:+911234567890"
               className="flex items-start gap-4 group focus:outline-none"
-              aria-label="Call Radha Energy Cell"
+              aria-label="Call Radha Solar Energy Cell"
             >
               <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center shrink-0 group-hover:bg-primary/25 transition-colors duration-300">
                 <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
@@ -306,9 +227,9 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:info@radheysolar.com"
+              href="mailto:info@radhasolar.com"
               className="flex items-start gap-4 group focus:outline-none"
-              aria-label="Email Radha Energy Cell"
+              aria-label="Email Radha Solar Energy Cell"
             >
               <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center shrink-0 group-hover:bg-primary/25 transition-colors duration-300">
                 <Mail className="w-5 h-5 text-primary" aria-hidden="true" />
@@ -316,7 +237,7 @@ export default function Footer() {
               <div>
                 <p className="font-sans text-xs font-semibold text-background/35 uppercase tracking-wider mb-1">Email</p>
                 <p className="font-sans text-sm text-background/70 group-hover:text-background transition-colors duration-300">
-                  info@radheysolar.com
+                  info@radhasolar.com
                 </p>
               </div>
             </a>
@@ -329,7 +250,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 md:px-6 max-w-[1600px] py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="font-sans text-xs text-background/30 text-center sm:text-left">
-              © {new Date().getFullYear()} Radha Energy Cell. All rights reserved. ISO 9001:2008 · MSME Approved · Ludhiana, Punjab, India.
+              © {new Date().getFullYear()} Radha Solar Energy Cell. All rights reserved. ISO 9001:2008 · MSME Approved · Ludhiana, Punjab, India.
             </p>
             <div className="flex items-center gap-1.5 text-background/25">
               <Sun className="w-3.5 h-3.5 text-primary/60" aria-hidden="true" />

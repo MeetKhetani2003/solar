@@ -9,7 +9,7 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Radhey Solar | Industrial Solar Drying & Thermal Solutions",
+  title: "Radha Solar | Industrial Solar Drying & Thermal Solutions",
   description:
     "Leading manufacturer of industrial solar dryers, parabolic concentrators & biomass processors. 25+ years, 1000+ installations across 20+ countries. Based in Ludhiana, India.",
   alternates: { canonical: "/" },

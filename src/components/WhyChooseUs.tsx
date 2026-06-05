@@ -100,7 +100,7 @@ export default function WhyChooseUs() {
     <section
       ref={sectionRef}
       id="why-choose-us"
-      aria-label="Why choose Radha Energy Cell for industrial solar drying solutions"
+      aria-label="Why choose Radha Solar Energy Cell for industrial solar drying solutions"
       className="relative w-full py-24 md:py-32 bg-foreground text-background overflow-hidden"
     >
       {/* Parallax background texture */}
@@ -223,11 +223,11 @@ export default function WhyChooseUs() {
           </p>
           <div className="flex items-center gap-4 shrink-0">
             <a
-              href={`https://wa.me/911234567890?text=${encodeURIComponent("Hello! I'd like a quote for an industrial solar dryer from Radha Energy Cell.")}`}
+              href={`https://wa.me/911234567890?text=${encodeURIComponent("Hello! I'd like a quote for an industrial solar dryer from Radha Solar Energy Cell.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-primary text-primary-foreground font-sans font-bold text-sm rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-lg shadow-primary/30 focus:outline-none focus:ring-2 focus:ring-primary/50"
-              aria-label="Request a solar dryer quote from Radha Energy Cell on WhatsApp"
+              aria-label="Request a solar dryer quote from Radha Solar Energy Cell on WhatsApp"
             >
               Request a Quote
             </a>
@@ -238,7 +238,7 @@ export default function WhyChooseUs() {
                   ?.scrollIntoView({ behavior: "smooth" })
               }
               className="px-8 py-3 border border-background/20 text-background font-sans font-bold text-sm rounded-full hover:border-primary hover:text-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary/50"
-              aria-label="View all Radha Energy Cell solar products"
+              aria-label="View all Radha Solar Energy Cell solar products"
             >
               View Products
             </button>
