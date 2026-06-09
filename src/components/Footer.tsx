@@ -10,6 +10,7 @@ import {
   ArrowUpRight,
   Sun,
 } from "lucide-react";
+import { productsData } from "@/lib/products";
 
 // ─── Brand / Social icons (not in this lucide-react build) ──────────────────
 function InstagramIcon({ className }: { className?: string }) {
@@ -50,10 +51,10 @@ function FacebookIcon({ className }: { className?: string }) {
 }
 
 const footerLinks = {
-  Products: [
-    { label: "Solar Parabolic Disc", href: "/products/parabolic-disc" },
-    { label: "Power Trough REC-20", href: "/products/parabolic-trough" },
-  ],
+  Products: productsData.map((product) => ({
+    label: product.shortName,
+    href: `/products/${product.slug}`,
+  })),
   Company: [
     { label: "About Us", href: "/about" },
     { label: "Quality Assurance", href: "/quality" },
