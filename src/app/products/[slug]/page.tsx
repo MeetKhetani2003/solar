@@ -9,6 +9,15 @@ import LenisProvider from "@/components/LenisProvider";
 import ProductImageViewer from "@/components/ProductImageViewer";
 import InquiryForm from "@/components/InquiryForm";
 import { CheckCircle, ArrowUpRight, ChevronRight, MessageSquare } from "lucide-react";
+import mongoose from "mongoose";
+import { connectDB } from "@/lib/db";
+import ProductMedia from "@/lib/models/ProductMedia";
+
+function getYouTubeId(url: string): string | null {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|shorts\/)([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[2].length === 11) ? match[2] : null;
+}
 
 // ─── Static Params ────────────────────────────────────────────────────────────
 export async function generateStaticParams() {
@@ -49,6 +58,30 @@ export default async function ProductSlugPage({
   if (!product) notFound();
 
   const related = getRelatedProducts(slug);
+
+  // Fetch dynamic media from database
+  let dbYoutubeUrls: string[] = [];
+  let dbImages: string[] = [];
+  try {
+    await connectDB();
+    
+    // Fetch YouTube URLs
+    const mediaDoc = await ProductMedia.findOne({ productSlug: slug });
+    if (mediaDoc) {
+      dbYoutubeUrls = mediaDoc.youtubeUrls || [];
+    }
+
+    // Fetch GridFS images
+    const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db!, {
+      bucketName: "product_images",
+    });
+    const files = await bucket.find({ "metadata.productSlug": slug }).toArray();
+    dbImages = files.map((file) => `/api/media/${file._id}`);
+  } catch (error) {
+    console.error("Error loading dynamic product media:", error);
+  }
+
+  const combinedGallery = [...(product.gallery || [product.image]), ...dbImages];
 
   // Product JSON-LD
   const jsonLd = {
@@ -144,7 +177,7 @@ export default async function ProductSlugPage({
               {/* Left Column: Sticky Product Image Viewer */}
               <div className="lg:col-span-6 lg:sticky lg:top-32">
                 <p className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">Product Gallery</p>
-                <ProductImageViewer images={product.gallery || [product.image]} alt={product.name} />
+                <ProductImageViewer images={combinedGallery} alt={product.name} />
               </div>
 
               {/* Right Column: Detailed Product Information & Inquiry */}
@@ -206,6 +239,36 @@ export default async function ProductSlugPage({
             </div>
           </div>
         </section>
+
+        {/* ── Video Demonstrations ────────────────────────── */}
+        {dbYoutubeUrls.length > 0 && (
+          <section className="py-20 md:py-28 border-b border-border/40 bg-foreground/[0.01]">
+            <div className="container mx-auto px-4 md:px-6 max-w-[1600px]">
+              <p className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4 text-center">Video Gallery</p>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground tracking-tight leading-tight mb-10 text-center">
+                System Demonstrations
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {dbYoutubeUrls.map((url, i) => {
+                  const ytId = getYouTubeId(url);
+                  if (!ytId) return null;
+                  return (
+                    <div key={i} className="group relative rounded-2xl border border-border/40 bg-background overflow-hidden aspect-video shadow-md hover:shadow-lg transition-all hover:border-primary/30 animate-fade-in">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${ytId}`}
+                        title={`${product.shortName} Video Demo ${i + 1}`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        loading="lazy"
+                        className="w-full h-full border-0 absolute inset-0"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ── Applications & Benefits ────────────────────────── */}
         <section className="py-20 md:py-28 bg-foreground border-b border-background/10">

@@ -120,6 +120,9 @@ export default function Navbar() {
               {/* Quality */}
               <NavLink href="/quality" label="Quality" isTransparent={isTransparent} isActive={pathname.startsWith("/quality")} />
 
+              {/* Gallery */}
+              <NavLink href="/gallery" label="Gallery" isTransparent={isTransparent} isActive={pathname === "/gallery"} />
+
               {/* Contact */}
               <NavLink href="/contact" label="Contact" isTransparent={isTransparent} isActive={pathname === "/contact"} />
             </div>
@@ -270,6 +273,7 @@ export default function Navbar() {
                 { label: "Home", href: "/" },
                 { label: "About", href: "/about" },
                 { label: "Quality", href: "/quality" },
+                { label: "Gallery", href: "/gallery" },
               ].map(({ label, href }, idx) => (
                 <motion.div key={label} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: idx * 0.06 }}>
                   <Link href={href} onClick={() => setMobileMenuOpen(false)} className={`block py-4 text-3xl sm:text-4xl font-heading font-bold border-b border-border/20 ${pathname === href ? "text-primary" : "text-foreground hover:text-primary"} transition-colors`}>

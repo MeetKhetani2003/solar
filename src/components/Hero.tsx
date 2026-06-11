@@ -3,23 +3,62 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Play, Pause } from "lucide-react";
+import Link from "next/link";
 
 const slides = [
   {
     id: "01",
-    category: "Concentrator Systems",
-    headline: "Solar Parabolic Disc.",
-    subheadline: "Dual-axis tracking concentrators designed for extreme temperatures up to 400°C.",
-    video: "/Parabolic Disc/Herovid.webm",
-    videoType: "video/webm"
+    slug: "parabolic-trough",
+    category: "Process Heat",
+    headline: "Solar Parabolic Trough",
+    subheadline: "Slash industrial boiler fuel bills by up to 80% with automated single-axis tracking process heat.",
+    video: "/client products/videos for hero/Parabolic_trough.mp4",
+    videoType: "video/mp4"
   },
   {
     id: "02",
-    category: "Process Heat",
-    headline: "Parabolic Trough.",
-    subheadline: "Single-axis automated tracking systems engineered for high-pressure industrial steam.",
-    video: "/ParabolicThough/Hero.webm",
-    videoType: "video/webm"
+    slug: "solar-dryer",
+    category: "Solar Dehydration",
+    headline: "Industrial Solar Dryer",
+    subheadline: "Dry crops, spices, and herbs hygienically using zero-cost solar thermal collectors.",
+    video: "/client products/videos for hero/solardryer10kg.mp4",
+    videoType: "video/mp4"
+  },
+  {
+    id: "03",
+    slug: "solar-cooker",
+    category: "Institutional Cooking",
+    headline: "Solar Parabolic Cooker",
+    subheadline: "Eliminate fuel costs in community kitchens, ashrams, and schools. Replaces commercial LPG cylinders.",
+    video: "/client products/videos for hero/solarcooker.mp4",
+    videoType: "video/mp4"
+  },
+  {
+    id: "04",
+    slug: "cow-dung-log-machine",
+    category: "Waste to Wealth",
+    headline: "Cow Dung Log Extruder",
+    subheadline: "Convert gaushala cow dung into dense Gomaya wood logs, replacing traditional forest firewood.",
+    video: "/client products/videos for hero/cowdunglogextractor.mp4",
+    videoType: "video/mp4"
+  },
+  {
+    id: "05",
+    slug: "cow-dung-pellet-machine",
+    category: "Organic Farming",
+    headline: "Cow Dung Pellet Maker",
+    subheadline: "Turn cattle manure into premium, slow-release organic fertilizer pellets to restore soil carbon.",
+    video: "/client products/videos for hero/Cow_dung_pellet_machine.mp4",
+    videoType: "video/mp4"
+  },
+  {
+    id: "06",
+    slug: "cow-dung-briquette-machine",
+    category: "Bio-Coal Production",
+    headline: "Cow Dung Briquette Press",
+    subheadline: "Convert crop residue and cow dung into high-density bio-coal briquettes, replacing industrial fossil coal.",
+    video: "/client products/videos for hero/Briquette_press_compressing.mp4",
+    videoType: "video/mp4"
   }
 ];
 
@@ -135,9 +174,12 @@ export default function Hero() {
 
           {/* Action Area */}
           <div className="flex items-center justify-center gap-6 mt-12">
-            <button className="px-8 py-4 bg-primary text-primary-foreground font-sans font-bold text-lg rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_30px_-5px_rgba(234,88,12,0.6)] flex items-center gap-3">
-              Explore Systems <ArrowRight className="w-5 h-5" />
-            </button>
+            <Link 
+              href={`/products/${slides[currentSlide].slug}`}
+              className="px-8 py-4 bg-primary text-primary-foreground font-sans font-bold text-lg rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_30px_-5px_rgba(234,88,12,0.6)] flex items-center gap-3 pointer-events-auto"
+            >
+              Explore Product <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </div>
