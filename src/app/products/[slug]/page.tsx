@@ -19,6 +19,62 @@ function getYouTubeId(url: string): string | null {
   return (match && match[2].length === 11) ? match[2] : null;
 }
 
+function parseInlineStyle(text: string): React.ReactNode[] {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="font-semibold text-foreground">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
+function renderOverview(overview: string) {
+  return overview.split("\n").map((line, index) => {
+    const trimmed = line.trim();
+    if (!trimmed) return <div key={index} className="h-2" />;
+
+    // Handle Headings
+    if (trimmed.startsWith("###")) {
+      return (
+        <h3 key={index} className="font-heading text-lg md:text-xl font-bold text-foreground mt-6 mb-3">
+          {parseInlineStyle(trimmed.replace(/^###\s*/, ""))}
+        </h3>
+      );
+    }
+    if (trimmed.startsWith("##")) {
+      return (
+        <h2 key={index} className="font-heading text-xl md:text-2xl font-bold text-foreground mt-8 mb-4">
+          {parseInlineStyle(trimmed.replace(/^##\s*/, ""))}
+        </h2>
+      );
+    }
+
+    // Handle List Items
+    if (trimmed.startsWith("-") || trimmed.startsWith("*")) {
+      return (
+        <div key={index} className="flex items-start gap-2.5 my-1.5 pl-4">
+          <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
+          <span className="font-sans text-sm text-muted-foreground leading-relaxed">
+            {parseInlineStyle(trimmed.replace(/^[-*]\s*/, ""))}
+          </span>
+        </div>
+      );
+    }
+
+    // Regular Paragraph
+    return (
+      <p key={index} className="font-sans text-base text-muted-foreground leading-relaxed mb-3">
+        {parseInlineStyle(trimmed)}
+      </p>
+    );
+  });
+}
+
 // ─── Static Params ────────────────────────────────────────────────────────────
 export async function generateStaticParams() {
   return productsData.map((p) => ({ slug: p.slug }));
@@ -181,58 +237,76 @@ export default async function ProductSlugPage({
               </div>
 
               {/* Right Column: Detailed Product Information & Inquiry */}
-              <div className="lg:col-span-6 flex flex-col gap-10">
+              <div className="lg:col-span-6 flex flex-col gap-8">
                 {/* About / Overview */}
                 <div>
                   <p className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">Description</p>
                   <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground tracking-tight leading-tight mb-5">
                     System Overview
                   </h2>
-                  <p className="font-sans text-base text-muted-foreground leading-relaxed mb-6">
-                    {product.overview}
-                  </p>
-
-                  {/* Features */}
-                  <div className="flex flex-col gap-3.5">
-                    {product.features.map((f, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true" />
-                        <span className="font-sans text-sm text-foreground/80 leading-relaxed">{f}</span>
-                      </div>
-                    ))}
+                  <div className="font-sans text-base text-muted-foreground leading-relaxed">
+                    {renderOverview(product.overview)}
                   </div>
                 </div>
 
-                {/* Specs table */}
-                <div>
-                  <p className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">Specifications</p>
-                  <div className="rounded-2xl border border-border/40 overflow-hidden mb-6">
-                    {product.specs.map((spec, i) => (
-                      <div
-                        key={i}
-                        className={`flex items-center justify-between px-5 py-3.5 ${i % 2 === 0 ? "bg-foreground/[0.02]" : "bg-background"} border-b border-border/30 last:border-b-0`}
-                      >
-                        <span className="font-sans text-sm font-semibold text-muted-foreground">{spec.label}</span>
-                        <span className="font-sans text-sm font-bold text-foreground text-right">{spec.value}</span>
-                      </div>
-                    ))}
+                {/* CTA Buttons */}
+                <div className="mt-4 flex flex-col sm:flex-row gap-4 items-center">
+                  <div className="flex-1 w-full">
+                    <InquiryForm productName={product.name} />
                   </div>
+                  <a
+                    href={`https://wa.me/911234567890?text=${encodeURIComponent(`Hello! I'd like a quote for the ${product.name} from Radha Solar.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 w-full py-4 border border-border/80 hover:border-primary hover:text-primary text-foreground font-sans font-bold text-sm rounded-full transition-all flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  >
+                    <MessageSquare className="w-4 h-4 text-primary" aria-hidden="true" />
+                    Chat on WhatsApp
+                  </a>
+                </div>
+              </div>
 
-                  {/* CTA Buttons */}
-                  <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
-                    <div className="flex-1 w-full">
-                      <InquiryForm productName={product.name} />
-                    </div>
-                    <a
-                      href={`https://wa.me/911234567890?text=${encodeURIComponent(`Hello! I'd like a quote for the ${product.name} from Radha Solar.`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 w-full py-4 border border-border/80 hover:border-primary hover:text-primary text-foreground font-sans font-bold text-sm rounded-full transition-all flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/50"
+            </div>
+          </div>
+        </section>
+
+        {/* ── Technical Specifications & Features ─────────────── */}
+        <section className="py-20 md:py-28 border-b border-border/40 bg-foreground/[0.01]">
+          <div className="container mx-auto px-4 md:px-6 max-w-[1600px]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+              
+              {/* Left Column: Specifications table */}
+              <div className="lg:col-span-5">
+                <p className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">Specifications</p>
+                <h2 className="font-heading text-3xl font-bold text-foreground tracking-tight leading-tight mb-6">
+                  Technical Specifications
+                </h2>
+                <div className="rounded-2xl border border-border/40 overflow-hidden">
+                  {product.specs.map((spec, i) => (
+                    <div
+                      key={i}
+                      className={`flex items-center justify-between px-5 py-3.5 ${i % 2 === 0 ? "bg-foreground/[0.02]" : "bg-background"} border-b border-border/30 last:border-b-0`}
                     >
-                      <MessageSquare className="w-4 h-4 text-primary" aria-hidden="true" />
-                      Chat on WhatsApp
-                    </a>
-                  </div>
+                      <span className="font-sans text-sm font-semibold text-muted-foreground">{spec.label}</span>
+                      <span className="font-sans text-sm font-bold text-foreground text-right">{spec.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column: Key Features */}
+              <div className="lg:col-span-7">
+                <p className="font-mono text-primary text-xs font-bold tracking-[0.3em] uppercase mb-4">Features</p>
+                <h2 className="font-heading text-3xl font-bold text-foreground tracking-tight leading-tight mb-6">
+                  Key Design Features
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {product.features.map((f, i) => (
+                    <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-background border border-border/30 hover:border-primary/20 transition-all duration-300">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true" />
+                      <span className="font-sans text-sm text-foreground/80 leading-relaxed">{f}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 

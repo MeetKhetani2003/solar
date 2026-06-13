@@ -327,7 +327,7 @@ export const productSchemas = [
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `${SITE_URL}/#product-cow-dung-log`,
-    name: "Cow Dung Log Extruder Machine",
+    name: "Cow Dung Log Machine",
     alternateName: "Eco-Friendly Wood Substitute Log Maker",
     description:
       "Heavy-duty biomass extrusion machine compressing raw cow dung and crop residue into high-density logs. Direct eco-friendly replacement for forest wood logs in cremations and boiler applications.",
@@ -335,7 +335,7 @@ export const productSchemas = [
     url: `${SITE_URL}/products/cow-dung-log-machine`,
     brand: { "@type": "Brand", name: SITE_NAME },
     manufacturer: { "@id": `${SITE_URL}/#organization` },
-    category: "Biomass Extruder Machine",
+    category: "Biomass Log Machine",
     keywords:
       "cow dung log machine price in India, gaushala waste management machine, gomaya log making machine price, cow dung wood making machine price, eco friendly cremation cow dung logs",
     offers: {

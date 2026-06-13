@@ -56,7 +56,7 @@ const localVideos = [
   {
     productSlug: "cow-dung-log-machine",
     url: "/client products/videos for hero/cowdunglogextractor.mp4",
-    title: "Cow Dung Log Extruder In Action"
+    title: "Cow Dung Log Machine In Action"
   },
   {
     productSlug: "cow-dung-pellet-machine",

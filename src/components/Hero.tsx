@@ -37,7 +37,7 @@ const slides = [
     id: "04",
     slug: "cow-dung-log-machine",
     category: "Waste to Wealth",
-    headline: "Cow Dung Log Extruder",
+    headline: "Cow Dung Log Machine",
     subheadline: "Convert gaushala cow dung into dense Gomaya wood logs, replacing traditional forest firewood.",
     video: "/client products/videos for hero/cowdunglogextractor.mp4",
     videoType: "video/mp4"
