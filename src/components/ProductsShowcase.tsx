@@ -8,6 +8,12 @@ import { ArrowUpRight } from "lucide-react";
 import { productsData } from "@/lib/products";
 
 export default function ProductsShowcase() {
+  const orderedProducts = [
+    ...productsData.filter((p) => p.slug === "solar-cooker"),
+    ...productsData.filter((p) => p.slug === "solar-dryer"),
+    ...productsData.filter((p) => p.slug !== "solar-cooker" && p.slug !== "solar-dryer"),
+  ];
+
   return (
     <section
       className="relative w-full bg-background py-24 md:py-32 z-10 overflow-hidden"
@@ -52,7 +58,7 @@ export default function ProductsShowcase() {
 
         {/* Alternating Split Layout */}
         <div className="flex flex-col gap-24 md:gap-36 max-w-7xl mx-auto">
-          {productsData.map((product, idx) => {
+          {orderedProducts.map((product, idx) => {
             const isEven = idx % 2 === 0;
             return (
               <motion.div
