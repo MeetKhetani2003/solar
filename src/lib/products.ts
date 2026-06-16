@@ -486,9 +486,9 @@ Engineered specifically for the Indian climate, the Power Trough REC-20 operates
     slug: "solar-dryer",
     name: "Industrial Solar Dryer",
     shortName: "Solar Dryer",
-    image: "/solar-dryer.png",
+    image: "/solar-dryer.jpeg",
     gallery: [
-      "/solar-dryer.png",
+      "/solar-dryer.jpeg",
       "/solar_dryer_1779596613449.png",
       "/industrial_solar_dryer_1779596730597.png"
     ],
@@ -705,9 +705,9 @@ The dryer is designed to work reliably across India's microclimates. During inte
     slug: "solar-cooker",
     name: "Solar Parabolic Cooker",
     shortName: "Parabolic Cooker",
-    image: "/solar-cooker.png",
+    image: "/solar-cooker.jpeg",
     gallery: [
-      "/solar-cooker.png",
+      "/solar-cooker.jpeg",
       "/solar_parabolic_cooker_1779596715146.png"
     ],
     description: "The Radha Solar Parabolic Cooker is a high-performance community solar cooker engineered to eliminate fuel costs in institutional kitchens, schools, ashrams, and hotels. Designed with a high-focus parabolic dish, this system concentrates solar rays to generate instant focal temperatures between 250°C and 350°C. This allows fast boiling, steaming, and frying of daily meals without consuming LPG, firewood, or electricity. It is an ideal green cooking solution for the Mid-Day Meal scheme in rural Indian schools, community kitchens (langars), temple trusts, and remote eco-resorts. Built to withstand demanding outdoor usage, the structure features heavy-duty galvanized piping and weather-resistant silvered glass mirrors with over 92% reflectivity. The manual focal tracking system is user-friendly, allowing local kitchen staff to align the dish easily. By replacing 30 to 45 commercial LPG cylinders per year, the cooker offers a highly attractive return on investment (ROI) with full payback in less than a year.",
@@ -923,9 +923,9 @@ Unlike firewood stoves (Chulhas), which release highly toxic smoke, the Paraboli
     slug: "cow-dung-log-machine",
     name: "Cow Dung Log Machine",
     shortName: "Cow Dung Log Machine",
-    image: "/cow-dung-log-machine.png",
+    image: "/cow-dung-log-machine.jpeg",
     gallery: [
-      "/cow-dung-log-machine.png",
+      "/cow-dung-log-machine.jpeg",
       "/biomass_processing_equipment_1779596747506.png"
     ],
     description: "The Radha Solar Cow Dung Log Machine is a heavy-duty biomass processing system engineered to convert wet cattle manure and agricultural waste into dense, high-durability logs (known in India as 'Gomaya wood' or 'Go-wood'). Designed to solve the massive manure management challenges faced by Indian gaushalas (cow shelters) and dairy farms, this machine compresses raw cow dung and dry crop straws into eco-friendly fuel logs. These logs serve as a direct substitute for forest firewood in traditional cremations—saving 2 to 3 fully grown trees per cremation—and in industrial boilers. Powered by a high-torque electric motor ranging from 7.5 HP to 15 HP, the machine features wear-resistant alloy steel extruder screws and interchangeable dies to produce logs of multiple diameters. By turning zero-cost gaushala waste into a high-demand green fuel, it creates a profitable waste-to-wealth business model with an ROI payback of just 10 to 12 months.",
@@ -1141,9 +1141,9 @@ The machine is built using a reinforced steel chassis and a heavy-duty gearbox t
     slug: "cow-dung-pellet-machine",
     name: "Cow Dung Pellet Maker Machine",
     shortName: "Cow Dung Pellet Machine",
-    image: "/cow-dung-pellet-machine.png",
+    image: "/cow-dung-pellet-machine.jpeg",
     gallery: [
-      "/cow-dung-pellet-machine.png",
+      "/cow-dung-pellet-machine.jpeg",
       "/biomass_processing_equipment_1779596747506.png"
     ],
     description: "The Radha Solar Cow Dung Pellet Maker Machine is an advanced agricultural processing unit engineered to turn raw manure, dairy waste, and poultry droppings into high-value organic fertilizer pellets (Jaivik Khad). Using a high-precision horizontal flat die system, this machine compresses pulverized dry manure without needing any chemical binders. The resulting uniform pellets are ideal for mechanical sowing using standard seed drills, addressing a major bottleneck in Indian organic farming where raw, bulky manure cannot be applied mechanically. Powered by a 10 HP to 20 HP three-phase motor, it features an integrated oil lubrication system and adjustable cutters to regulate pellet length. It provides gaushalas, Farmer Producer Organizations (FPOs), and organic startups with an exceptional opportunity to package and retail premium bio-fertilizers. By converting low-value dung into commercial-grade pellets, it delivers a highly profitable business loop with low operating costs and quick payback.",
@@ -1359,9 +1359,9 @@ Designed to process various types of animal manure, including cow dung, goat man
     slug: "cow-dung-briquette-machine",
     name: "Cow Dung Briquette Press Machine",
     shortName: "Cow Dung Briquette Press",
-    image: "/cow-dung-briquette-machine.png",
+    image: "/cow-dung-briquette-machine.jpeg",
     gallery: [
-      "/cow-dung-briquette-machine.png",
+      "/cow-dung-briquette-machine.jpeg",
       "/biomass_processing_equipment_1779596747506.png"
     ],
     description: "The Radha Solar Cow Dung Briquette Press Machine is an industrial-grade mechanical crankshaft press designed to convert dry cow dung and crop residues (such as paddy straw/parali) into high-density bio-coal briquettes. Engineered to address the severe crop residue burning issues in North India, this high-pressure machine generates a direct, eco-friendly replacement for polluting fossil coal in factory boilers and power plants. Complying with the NTPC mandate for 5-10% biomass co-firing, the briquettes have a high calorific value (3200-4200 Kcal/kg) and burn with zero sulfur emissions. Powered by a heavy-duty 30 HP to 50 HP motor, the machine features an advanced oil cooling system, automated screw feeders, and a 6-meter stabilization cooling track. This makes it a highly profitable green energy business model for biomass entrepreneurs, paper mills, brick kilns, and FPOs, yielding full capital recovery within a year.",

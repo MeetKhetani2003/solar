@@ -70,7 +70,7 @@ export default function ProductsShowcase() {
                 className={`flex flex-col lg:flex-row gap-12 lg:gap-20 items-center ${isEven ? "" : "lg:flex-row-reverse"}`}
               >
                 {/* Image Column */}
-                <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-3xl overflow-hidden border border-border/40 bg-foreground/5 shadow-xl group shrink-0">
+                <div className="w-full lg:w-1/2 relative aspect-[3/4] rounded-3xl overflow-hidden border border-border/40 bg-foreground/5 shadow-xl group shrink-0">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -81,7 +81,7 @@ export default function ProductsShowcase() {
                   />
                   {/* Glowing Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                  
+
                   {/* Capacity Pill */}
                   <div className="absolute top-4 right-4 bg-background/85 backdrop-blur-md border border-border/30 px-4 py-2 rounded-full font-mono text-xs font-semibold text-foreground shadow-sm">
                     {product.capacity}
