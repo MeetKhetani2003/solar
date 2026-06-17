@@ -2,12 +2,12 @@
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
-import { 
-  ChevronLeft, 
-  ChevronRight, 
-  ZoomIn, 
-  ZoomOut, 
-  X, 
+import {
+  ChevronLeft,
+  ChevronRight,
+  ZoomIn,
+  ZoomOut,
+  X,
   RotateCcw,
   Maximize2
 } from "lucide-react";
@@ -23,7 +23,7 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
   const [isHovering, setIsHovering] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  
+
   // Lightbox Zoom and Pan State
   const [lightboxScale, setLightboxScale] = useState(1);
   const lightboxImageRef = useRef<HTMLDivElement>(null);
@@ -103,9 +103,9 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
   return (
     <div className="w-full flex flex-col gap-4">
       {/* ── Main Viewport ────────────────────────────────── */}
-      <div className="relative aspect-square w-full rounded-2xl border border-border/40 bg-foreground/[0.03] overflow-hidden group shadow-md transition-shadow hover:shadow-lg">
+      <div className="relative aspect-[3/4] w-full rounded-2xl border border-border/40 bg-foreground/[0.03] overflow-hidden group shadow-md transition-shadow hover:shadow-lg">
         {/* Hover Magnifier Container */}
-        <div 
+        <div
           className="relative w-full h-full cursor-zoom-in overflow-hidden"
           onMouseMove={handleMouseMove}
           onMouseEnter={() => setIsHovering(true)}
@@ -191,11 +191,10 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
             <button
               key={idx}
               onClick={() => handleThumbnailClick(idx)}
-              className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 flex-shrink-0 transition-all ${
-                idx === currentIndex
-                  ? "border-primary shadow-sm scale-95"
-                  : "border-border/40 opacity-70 hover:opacity-100 hover:border-border"
-              }`}
+              className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 flex-shrink-0 transition-all ${idx === currentIndex
+                ? "border-primary shadow-sm scale-95"
+                : "border-border/40 opacity-70 hover:opacity-100 hover:border-border"
+                }`}
             >
               <Image
                 src={img}
@@ -223,7 +222,7 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
               <span className="font-heading text-sm md:text-base font-semibold tracking-wide truncate max-w-[60%]">
                 {alt}
               </span>
-              
+
               <div className="flex items-center gap-2 md:gap-4 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full backdrop-blur-md">
                 <button
                   onClick={handleZoomOut}
@@ -277,7 +276,7 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
               )}
 
               {/* Draggable and Zoomable Image Wrapper */}
-              <div 
+              <div
                 ref={lightboxImageRef}
                 className="relative w-full max-w-5xl h-full flex items-center justify-center"
               >
@@ -322,11 +321,10 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
                     <button
                       key={idx}
                       onClick={() => handleThumbnailClick(idx)}
-                      className={`relative w-14 h-14 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${
-                        idx === currentIndex
-                          ? "border-primary scale-95"
-                          : "border-white/10 opacity-50 hover:opacity-100 hover:border-white/30"
-                      }`}
+                      className={`relative w-14 h-14 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${idx === currentIndex
+                        ? "border-primary scale-95"
+                        : "border-white/10 opacity-50 hover:opacity-100 hover:border-white/30"
+                        }`}
                     >
                       <Image
                         src={img}
@@ -339,7 +337,7 @@ export default function ProductImageViewer({ images, alt }: ProductImageViewerPr
                   ))}
                 </div>
               )}
-              
+
               <div className="font-mono text-xs text-white/50">
                 Image {currentIndex + 1} of {totalImages}
               </div>

@@ -490,7 +490,10 @@ Engineered specifically for the Indian climate, the Power Trough REC-20 operates
     gallery: [
       "/solar-dryer.jpeg",
       "/solar_dryer_1779596613449.png",
-      "/industrial_solar_dryer_1779596730597.png"
+      "/industrial_solar_dryer_1779596730597.png",
+      "/10kg solar dryer.jpeg",
+      "/100kg solar dryer.jpeg",
+      "/200kg solar dryer.jpeg"
     ],
     description: "The Radha Solar Industrial Solar Dryer is a high-performance, FSSAI-compliant dehydration system designed to address post-harvest losses and high drying costs in Indian agriculture. By utilizing advanced solar air collectors, this closed-loop system circulates clean, heated air at controlled temperatures between 35°C and 85°C, drying crops 60-80% faster than traditional open-sun drying. It is an ideal solution for Farmer Producer Organizations (FPOs), spice manufacturers, herbal extractors, and food processors who require a hygienic, weather-independent drying environment. The built-in hybrid backup heating system (electrical or biomass-based) ensures uninterrupted 24/7 operations even during heavy monsoons or cloudy winter days. Constructed with food-grade SS304/SS316 stainless steel to prevent contamination from dust, insects, and bird droppings, the dryer preserves the natural color, nutrients, and aroma of high-value crops. The equipment is fully eligible for NABARD capital subsidies and state agriculture department grants, making it a highly profitable investment for agricultural entrepreneurs.",
     tags: ["NABARD Subsidy Eligible", "FSSAI Food Grade", "Hybrid Backup (24/7)", "Saves post-harvest loss"],
