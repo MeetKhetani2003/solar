@@ -711,7 +711,11 @@ The dryer is designed to work reliably across India's microclimates. During inte
     image: "/solar-cooker.jpeg",
     gallery: [
       "/solar-cooker.jpeg",
-      "/solar_parabolic_cooker_1779596715146.png"
+      "/solar_parabolic_cooker_1779596715146.png",
+      "/solarcooker2.png",
+      "/solarcooker3.jpeg",
+      "/solarcooker4.jpeg",
+      "/solarcookertop.png"
     ],
     description: "The Radha Solar Parabolic Cooker is a high-performance community solar cooker engineered to eliminate fuel costs in institutional kitchens, schools, ashrams, and hotels. Designed with a high-focus parabolic dish, this system concentrates solar rays to generate instant focal temperatures between 250°C and 350°C. This allows fast boiling, steaming, and frying of daily meals without consuming LPG, firewood, or electricity. It is an ideal green cooking solution for the Mid-Day Meal scheme in rural Indian schools, community kitchens (langars), temple trusts, and remote eco-resorts. Built to withstand demanding outdoor usage, the structure features heavy-duty galvanized piping and weather-resistant silvered glass mirrors with over 92% reflectivity. The manual focal tracking system is user-friendly, allowing local kitchen staff to align the dish easily. By replacing 30 to 45 commercial LPG cylinders per year, the cooker offers a highly attractive return on investment (ROI) with full payback in less than a year.",
     tags: ["Replaces LPG Cylinders", "250°C+ Cooking Heat", "MSME Approved", "Saves Rural Fuel Costs"],
