@@ -1580,6 +1580,126 @@ The briquette press is engineered using a mechanical crankshaft mechanism that g
       "bio coal briquette press manufacturer",
       "biomass co firing NTPC briquettes"
     ]
+  },
+  {
+    id: "cow-dung-powder-machine",
+    slug: "cow-dung-powder-machine",
+    name: "Cow Dung Powder Making Machine",
+    shortName: "Dung Powder Machine",
+    image: "/dung powder machine.jpeg",
+    gallery: [
+      "/dung powder machine.jpeg"
+    ],
+    description: "The Radha Solar Cow Dung Powder Making Machine is an industrial-grade pulverizer engineered to transform dried cow dung and semi-wet animal manure into a fine, uniform organic fertilizer powder. Designed specifically for dairy farms, gaushalas, and commercial organic fertilizer production lines, this machine is a cornerstone for sustainable agricultural waste management. Powered by a highly efficient 2 HP single-phase motor, it processes up to 100 kg of raw manure per hour. By crushing bulky, slow-decomposing dung lumps, it significantly accelerates the composting process and produces a premium foundational feed for large-scale vermicomposting or biomass briquetting. Its semi-automatic, user-friendly operation ensures that rural entrepreneurs and farm owners can achieve a rapid Return on Investment (ROI) while reducing labor costs and turning farm waste into high-margin commercial organic manure.",
+    tags: ["2 HP Motor", "100 kg/hr Capacity", "Single Phase", "High ROI", "Easy to Operate"],
+    capacity: "100 kg per hour",
+    heroTagline: "Turn dairy farm waste into high-value organic fertilizer powder with our easy-to-operate, high-ROI Cow Dung Crushing Machine.",
+    overview: `
+### Transforming Farm Waste into Profitable Organic Fertilizer
+In the modern agricultural landscape, managing raw cow dung from dairy farms and gaushalas presents both a logistical challenge and a massive business opportunity. The Cow Dung Powder Making Machine is designed to solve this by efficiently crushing dried dung into a fine, uniform powder. This critical process increases the surface area of the manure, drastically reducing the natural decomposition time and yielding a high-quality organic fertilizer rich in nitrogen, phosphorus, and potassium (NPK). It is the perfect first step for entrepreneurs looking to set up a small-scale manure fertilizer production line.
+
+### Seamless Operation with Low Maintenance
+Designed for rugged rural and semi-urban environments, this pulverizer is exceptionally easy to operate. It runs on a standard 220V single-phase electrical supply, meaning it can be plugged into existing domestic or agricultural power grids without expensive commercial electrical upgrades. The heavy-duty mild steel crushing chamber and chain/hammer blades are built for longevity. Routine maintenance is simple: regular cleaning of the crushing chamber to prevent acidic manure buildup, periodic greasing of the bearings, and occasional sharpening or replacement of the crushing blades ensure years of uninterrupted service.
+
+### High ROI and Synergies with Biomass & Vermicomposting
+Investing in a cow dung crushing machine offers an incredibly fast Return on Investment (ROI), often paying for itself within 5 to 6 months through the sale of premium powdered manure. Furthermore, the uniform powder is highly versatile. It serves as an excellent binding agent when mixed with agricultural waste in a Bio-Coal Briquette Press. For organic farmers, it is the ideal feedstock for earthworms in commercial vermicompost beds, promoting faster digestion and yielding a superior, highly marketable compost product.
+    `,
+    features: [
+      "Efficient 2 HP single-phase motor suitable for domestic and semi-commercial power setups",
+      "Consistent processing capacity of 100 kg per hour for steady, scalable production",
+      "Extremely easy to operate with a simple plug-and-play semi-automatic control panel",
+      "Heavy-duty mild steel crushing chamber designed to withstand the acidic and abrasive nature of manure",
+      "Built-in mesh screening system ensuring a uniform, consistent particle size for the output powder",
+      "Compact, space-saving footprint ideal for installation in gaushalas, sheds, or farm outbuildings",
+      "Low maintenance design featuring easily accessible crushing blades and centralized lubrication points",
+      "Dust-controlled operation environment to minimize airborne particulate pollution during processing",
+      "Significantly reduces manual labor and processing time compared to traditional manual crushing methods"
+    ],
+    specs: [
+      { label: "Motor Power", value: "2 HP" },
+      { label: "Production Capacity", value: "100 kg per hour" },
+      { label: "Power Supply", value: "Single Phase (220V)" },
+      { label: "Operation Type", value: "Semi-Automatic / Easy to Operate" },
+      { label: "Material of Construction", value: "Heavy-Duty Mild Steel" },
+      { label: "Application", value: "Cow dung crushing, organic fertilizer powdering" },
+      { label: "Maintenance", value: "Easy-access chamber, greasable bearings" }
+    ],
+    applications: [
+      "Preparation of fine cow dung powder for direct sale as high-grade organic manure",
+      "Pre-processing and particle size reduction for commercial vermicompost beds",
+      "Creating foundational binder material for biomass bio-coal briquette machines",
+      "Manufacturing of organic eco-friendly products like cow dung pots (diyas) and holy logs",
+      "Blending with agricultural soil, cocopeat, and bio-cultures for commercial plant nurseries",
+      "Volume reduction of farm waste for easier bagging, storage, and cost-effective transportation"
+    ],
+    benefits: [
+      "Transforms raw, bulky farm waste into a high-value, marketable commercial organic fertilizer",
+      "Offers a rapid Return on Investment (ROI), typically breaking even within 5 to 6 months",
+      "Significantly reduces storage space and transportation logistics costs for large dairy farms",
+      "Extremely user-friendly and safe; can be operated by a single unskilled worker with minimal training",
+      "Runs on standard single-phase electricity, avoiding the high costs of industrial power line installation",
+      "Accelerates the natural composting process by increasing the surface area of the manure for microbial action",
+      "Built with durable, corrosion-resistant components to ensure long-term reliability and low maintenance costs in rural settings"
+    ],
+    industries: [
+      "Dairy Farms & Commercial Gaushalas",
+      "Organic Fertilizer Production & Packaging",
+      "Biomass Briquetting & Bio-Fuel Plants",
+      "Commercial Vermicompost Manufacturers",
+      "Agricultural Waste Management Facilities",
+      "Commercial Plant Nurseries & Greenhouses"
+    ],
+    faqs: [
+      {
+        question: "Does the cow dung need to be dried before crushing?",
+        answer:
+          "Yes, optimal performance requires the raw cow dung to be dried (or processed through a solid-liquid separator) to a lower moisture level (around 30-40%) before feeding. Wet or fresh dung will clog the crushing chamber and the output screens."
+      },
+      {
+        question: "Can it run on a regular home electricity connection?",
+        answer:
+          "Yes. The machine is equipped with a highly efficient 2 HP single-phase motor, which means it can operate seamlessly on standard 220V domestic or agricultural electrical connections without heavy industrial wiring."
+      },
+      {
+        question: "Is the machine difficult to operate for rural workers?",
+        answer:
+          "Not at all. It is designed specifically for ease of use. A single operator simply switches on the panel and steadily feeds the dried dung lumps into the top hopper. The machine automatically pulverizes and discharges the fine powder."
+      },
+      {
+        question: "What is the hourly output and profitability of this model?",
+        answer:
+          "This 2 HP model processes up to 100 kg of dried cow dung per hour. Because the raw material is often free or very cheap, producing and bagging this powder yields high profit margins, often leading to a full ROI within 6 months."
+      },
+      {
+        question: "Can this powder be used directly as fertilizer?",
+        answer:
+          "Absolutely. The fine powder can be applied directly to agricultural fields or garden soil as a rich organic manure. Its fine texture allows for rapid nutrient absorption by plant roots."
+      },
+      {
+        question: "How do we control the final size of the powder?",
+        answer:
+          "The machine features an internal, interchangeable mesh screen. The diameter of the holes on this screen dictates the fineness of the powder. You can easily swap screens if a coarser or finer texture is required for different products."
+      },
+      {
+        question: "What are the routine maintenance requirements?",
+        answer:
+          "Maintenance is straightforward. It requires daily cleaning of the crushing chamber after use to prevent the acidic manure from causing rust, periodic greasing of the main bearings, and occasional inspection or sharpening of the internal crushing blades."
+      }
+    ],
+    relatedSlugs: ["cow-dung-log-machine", "briquette-press-machine", "solar-dryer"],
+    seoTitle: "Commercial Cow Dung Powder Making Machine | Organic Fertilizer Crusher | Radha Solar",
+    seoDescription:
+      "Start your organic fertilizer business with Radha Solar's 2HP Cow Dung Powder Making Machine. Easy to operate, 100kg/hr capacity, high ROI, and low maintenance. Ideal for dairy farms.",
+    keywords: [
+      "commercial cow dung powder making machine",
+      "cow dung crushing machine for organic farming",
+      "small scale manure fertilizer production line",
+      "2hp single phase cow dung pulverizer",
+      "how to convert cow dung into organic fertilizer powder",
+      "gaushala waste management equipment",
+      "industrial crusher for semi-wet animal manure",
+      "cow dung compost grinder machine price"
+    ]
   }
 ];
 
