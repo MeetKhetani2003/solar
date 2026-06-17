@@ -12,8 +12,8 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Industrial Area, Ludhiana, Punjab 141003, India",
-    href: "https://maps.google.com/?q=Ludhiana+Punjab+India",
+    value: "1st Floor ,Deol Mkt ,Rajesh Nagar, Haibowal Kalan, Ludhiana, Punjab 141001, India",
+    href: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219059.0466558085!2d75.822119!3d30.920281000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83a410b99833%3A0x59fd0b3675e6e49f!2sRadha%20Energy%20Cell!5e0!3m2!1sen!2sus!4v1781702281988!5m2!1sen!2sus",
   },
   {
     icon: Phone,
@@ -24,8 +24,8 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@radhasolar.com",
-    href: "mailto:info@radhasolar.com",
+    value: "sales@radhasolar.com\npur@radhasolar.com",
+    href: "mailto:sales@radhasolar.com",
   },
   {
     icon: Clock,

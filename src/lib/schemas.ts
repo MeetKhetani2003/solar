@@ -63,13 +63,13 @@ export const localBusinessSchema = {
     "Leading manufacturer of industrial solar dryers, parabolic thermal concentrators, and biomass processing equipment. Serving agriculture, food processing, pharmaceuticals, and heavy industry worldwide.",
   priceRange: "₹₹₹",
   telephone: "+91-9888897248",
-  email: "info@radhasolar.com",
+  email: "sales@radhasolar.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Industrial Area, Phase 2",
-    addressLocality: "Rajkot",
-    addressRegion: "Gujarat",
-    postalCode: "360002",
+    streetAddress: "1st Floor, Deol Mkt, Rajesh Nagar, Haibowal Kalan",
+    addressLocality: "Ludhiana",
+    addressRegion: "Punjab",
+    postalCode: "141001",
     addressCountry: "IN",
   },
   geo: {

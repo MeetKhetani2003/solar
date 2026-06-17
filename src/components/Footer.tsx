@@ -206,13 +206,13 @@ export default function Footer() {
               <div>
                 <p className="font-sans text-xs font-semibold text-background/35 uppercase tracking-wider mb-1">Location</p>
                 <p className="font-sans text-sm text-background/70 group-hover:text-background transition-colors duration-300 leading-snug">
-                  Ludhiana, Punjab, India
+                  1st Floor ,Deol Mkt ,Rajesh Nagar, Haibowal Kalan, Ludhiana, Punjab 141001, India
                 </p>
               </div>
             </a>
 
             <a
-              href="tel:+919888897248"
+              href="tel:+919815097248"
               className="flex items-start gap-4 group focus:outline-none"
               aria-label="Call Radha Solar Energy Cell"
             >
@@ -222,13 +222,13 @@ export default function Footer() {
               <div>
                 <p className="font-sans text-xs font-semibold text-background/35 uppercase tracking-wider mb-1">Phone</p>
                 <p className="font-sans text-sm text-background/70 group-hover:text-background transition-colors duration-300">
-                  +91 98888 97248
+                  +91 98150 97248
                 </p>
               </div>
             </a>
 
             <a
-              href="mailto:info@radhasolar.com"
+              href="mailto:sales@radhasolar.com"
               className="flex items-start gap-4 group focus:outline-none"
               aria-label="Email Radha Solar Energy Cell"
             >
@@ -238,7 +238,8 @@ export default function Footer() {
               <div>
                 <p className="font-sans text-xs font-semibold text-background/35 uppercase tracking-wider mb-1">Email</p>
                 <p className="font-sans text-sm text-background/70 group-hover:text-background transition-colors duration-300">
-                  info@radhasolar.com
+                  sales@radhasolar.com<br/>
+                  pur@radhasolar.com
                 </p>
               </div>
             </a>
