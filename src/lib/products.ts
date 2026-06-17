@@ -492,6 +492,8 @@ Engineered specifically for the Indian climate, the Power Trough REC-20 operates
       "/solar_dryer_1779596613449.png",
       "/industrial_solar_dryer_1779596730597.png",
       "/10kg solar dryer.jpeg",
+      "/20_KG_Solar_Dryer_202606171213.jpeg",
+      "/50kg solar dryer.jpeg",
       "/100kg solar dryer.jpeg",
       "/200kg solar dryer.jpeg"
     ],
