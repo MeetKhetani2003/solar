@@ -255,7 +255,7 @@ export default async function ProductSlugPage({
                     <InquiryForm productName={product.name} />
                   </div>
                   <a
-                    href={`https://wa.me/911234567890?text=${encodeURIComponent(`Hello! I'd like a quote for the ${product.name} from Radha Solar.`)}`}
+                    href={`https://wa.me/919888897248?text=${encodeURIComponent(`Hello! I'd like a quote for the ${product.name} from Radha Solar.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 w-full py-4 border border-border/80 hover:border-primary hover:text-primary text-foreground font-sans font-bold text-sm rounded-full transition-all flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/50"

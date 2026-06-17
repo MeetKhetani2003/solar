@@ -223,7 +223,7 @@ export default function WhyChooseUs() {
           </p>
           <div className="flex items-center gap-4 shrink-0">
             <a
-              href={`https://wa.me/911234567890?text=${encodeURIComponent("Hello! I'd like a quote for an industrial solar dryer from Radha Solar Energy Cell.")}`}
+              href={`https://wa.me/919888897248?text=${encodeURIComponent("Hello! I'd like a quote for an industrial solar dryer from Radha Solar Energy Cell.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-primary text-primary-foreground font-sans font-bold text-sm rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-lg shadow-primary/30 focus:outline-none focus:ring-2 focus:ring-primary/50"

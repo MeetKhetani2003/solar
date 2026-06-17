@@ -31,13 +31,13 @@ export const organizationSchema = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+91-1234567890",
+      telephone: "+91-9888897248",
       contactType: "sales",
       availableLanguage: ["English", "Hindi"],
     },
     {
       "@type": "ContactPoint",
-      telephone: "+91-1234567890",
+      telephone: "+91-9888897248",
       contactType: "customer service",
       availableLanguage: ["English", "Hindi"],
     },
@@ -62,7 +62,7 @@ export const localBusinessSchema = {
   description:
     "Leading manufacturer of industrial solar dryers, parabolic thermal concentrators, and biomass processing equipment. Serving agriculture, food processing, pharmaceuticals, and heavy industry worldwide.",
   priceRange: "₹₹₹",
-  telephone: "+91-1234567890",
+  telephone: "+91-9888897248",
   email: "info@radhasolar.com",
   address: {
     "@type": "PostalAddress",

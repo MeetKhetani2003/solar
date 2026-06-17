@@ -190,7 +190,7 @@ export default function AboutSection() {
                   Explore Products
                 </button>
                 <a
-                  href={`https://wa.me/911234567890?text=${encodeURIComponent(
+                  href={`https://wa.me/919888897248?text=${encodeURIComponent(
                     "Hello! I'd like to know more about Radha Solar Energy Cell solar products."
                   )}`}
                   target="_blank"

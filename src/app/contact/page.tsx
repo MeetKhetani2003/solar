@@ -18,8 +18,8 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 123 456 7890",
-    href: "tel:+911234567890",
+    value: "+91 98888 97248",
+    href: "tel:+919888897248",
   },
   {
     icon: Mail,
@@ -185,7 +185,7 @@ export default function ContactPage() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  href={`https://wa.me/911234567890?text=${encodeURIComponent("Hello! I'd like to enquire about your solar drying products and get a quote.")}`}
+                  href={`https://wa.me/919888897248?text=${encodeURIComponent("Hello! I'd like to enquire about your solar drying products and get a quote.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-5 rounded-2xl border border-[#25D366]/30 bg-[#25D366]/5 hover:bg-[#25D366]/10 hover:border-[#25D366]/50 transition-all duration-300 focus:outline-none"

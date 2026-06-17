@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
  * Replace WHATSAPP_NUMBER with your actual WhatsApp business number.
  */
 
-const WHATSAPP_NUMBER = "+911234567890";
+const WHATSAPP_NUMBER = "+919888897248";
 const WHATSAPP_MESSAGE =
   "Hello! I'm interested in your industrial solar drying solutions. Please share more information.";
 

@@ -212,7 +212,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="tel:+911234567890"
+              href="tel:+919888897248"
               className="flex items-start gap-4 group focus:outline-none"
               aria-label="Call Radha Solar Energy Cell"
             >
@@ -222,7 +222,7 @@ export default function Footer() {
               <div>
                 <p className="font-sans text-xs font-semibold text-background/35 uppercase tracking-wider mb-1">Phone</p>
                 <p className="font-sans text-sm text-background/70 group-hover:text-background transition-colors duration-300">
-                  +91 123 456 7890
+                  +91 98888 97248
                 </p>
               </div>
             </a>

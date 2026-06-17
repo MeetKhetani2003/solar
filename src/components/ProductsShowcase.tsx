@@ -131,7 +131,7 @@ export default function ProductsShowcase() {
                       <ArrowUpRight className="w-4 h-4" />
                     </Link>
                     <a
-                      href={`https://wa.me/911234567890?text=${encodeURIComponent(`Hello! I'd like a quote for the ${product.name} from Radha Solar.`)}`}
+                      href={`https://wa.me/919888897248?text=${encodeURIComponent(`Hello! I'd like a quote for the ${product.name} from Radha Solar.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-8 py-3.5 border border-border/80 text-foreground font-sans font-bold text-sm rounded-full hover:border-primary/50 hover:text-primary transition-all flex items-center justify-center gap-2"

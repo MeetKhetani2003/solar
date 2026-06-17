@@ -194,7 +194,7 @@ export default function FaqSection() {
             Still have questions? Our solar engineering team is ready to help.
           </p>
           <a
-            href={`https://wa.me/911234567890?text=${encodeURIComponent("Hello! I have a question about your solar drying systems.")}`}
+            href={`https://wa.me/919888897248?text=${encodeURIComponent("Hello! I have a question about your solar drying systems.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 px-8 py-3 bg-primary text-primary-foreground font-sans font-bold text-sm rounded-full hover:bg-primary/90 hover:scale-105 transition-all shadow-md shadow-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50"
