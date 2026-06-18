@@ -13,7 +13,7 @@ const contactDetails = [
     icon: MapPin,
     label: "Address",
     value: "1st Floor ,Deol Mkt ,Rajesh Nagar, Haibowal Kalan, Ludhiana, Punjab 141001, India",
-    href: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219059.0466558085!2d75.822119!3d30.920281000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83a410b99833%3A0x59fd0b3675e6e49f!2sRadha%20Energy%20Cell!5e0!3m2!1sen!2sus!4v1781702281988!5m2!1sen!2sus",
+    href: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3422.235916433732!2d75.68528177558841!3d30.93597497448679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDU2JzA5LjUiTiA3NcKwNDEnMTYuMyJF!5e0!3m2!1sen!2sin!4v1781758014778!5m2!1sen!2sin",
   },
   {
     icon: Phone,
