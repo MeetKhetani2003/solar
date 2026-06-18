@@ -206,7 +206,7 @@ export default function Footer() {
               <div>
                 <p className="font-sans text-xs font-semibold text-background/35 uppercase tracking-wider mb-1">Location</p>
                 <p className="font-sans text-sm text-background/70 group-hover:text-background transition-colors duration-300 leading-snug">
-                  1st Floor ,Deol Mkt ,Rajesh Nagar, Haibowal Kalan, Ludhiana, Punjab 141001, India
+                  369 Gaunspur, Hambran, Ludhiana, Punjab, India
                 </p>
               </div>
             </a>

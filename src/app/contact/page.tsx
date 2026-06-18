@@ -12,7 +12,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Address",
-    value: "1st Floor ,Deol Mkt ,Rajesh Nagar, Haibowal Kalan, Ludhiana, Punjab 141001, India",
+    value: "369 Gaunspur, Hambran, Ludhiana, Punjab, India",
     href: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3422.235916433732!2d75.68528177558841!3d30.93597497448679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDU2JzA5LjUiTiA3NcKwNDEnMTYuMyJF!5e0!3m2!1sen!2sin!4v1781758014778!5m2!1sen!2sin",
   },
   {

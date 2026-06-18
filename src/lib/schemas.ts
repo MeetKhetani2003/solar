@@ -66,7 +66,7 @@ export const localBusinessSchema = {
   email: "sales@radhasolar.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "1st Floor, Deol Mkt, Rajesh Nagar, Haibowal Kalan",
+    streetAddress: "369 Gaunspur, Hambran",
     addressLocality: "Ludhiana",
     addressRegion: "Punjab",
     postalCode: "141001",
