@@ -182,9 +182,7 @@ export default function RootLayout({
         {/* Canonical hint for crawlers (Next.js also injects canonical via metadata) */}
         <link rel="canonical" href={SITE_URL} />
 
-        {/* Favicons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+
 
         {/* Geo / local SEO meta tags */}
         <meta name="geo.region" content="IN-GJ" />
